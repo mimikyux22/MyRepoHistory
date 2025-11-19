@@ -1,0 +1,39 @@
+/* 1. ESTILOS DEL CUERPO */
+body {
+    margin: 0;
+}
+
+/* 2. ESTILOS DEL CONTENEDOR PRINCIPAL (.content) */
+.content {
+    /* Posicionamiento para estar SOBRE el fondo fijo */
+    position: relative; 
+    z-index: 1; 
+    
+    /* 🛑 CRÍTICO: Asegura suficiente altura para el SCROLL */
+    /* Lo mínimo es 100vh, pero 200vh asegura que se vean los párrafos */
+    min-height: 200vh; 
+    
+    /* Estilos de visualización */
+    color: white; 
+    padding-left: 50px; /* Separar de los lados */
+    padding-right: 50px;
+    /* QUITAMOS el padding-top/bottom aquí para que .Titulo_Centrado controle el espacio */
+    
+    font-family: sans-serif;
+}
+
+/* 3. ESTILOS DEL TÍTULO (.Titulo_Centrado) */
+.Titulo_Centrado {
+    /* Tamaño gigante y centrado */
+    font-size: 8vw;
+    text-align: center;
+    
+    /* Eliminar margen superior del navegador */
+    margin-top: 0; 
+    /* 🛑 CRÍTICO: Este margen empuja el siguiente elemento (el div de los <p>) */
+    margin-bottom: 200px; /* Aumentamos el espacio a 200px para que los <p> sean visibles */
+    
+    /* Padding y color */
+    padding-top: 50px; /* Espacio entre el borde superior y el texto H1 */
+    color: white;
+}
