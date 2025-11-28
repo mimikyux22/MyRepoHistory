@@ -23,7 +23,7 @@ body {
 }
 
 /* 3. ESTILOS DEL TÍTULO (.Titulo_Centrado) */
-.Titulo_Centrado {
+.Titulo_Centrado_MyRepoHistory {
     /* Tamaño gigante y centrado */
     font-size: 8vw;
     text-align: center;
@@ -36,4 +36,141 @@ body {
     /* Padding y color */
     padding-top: 50px; /* Espacio entre el borde superior y el texto H1 */
     color: white;
+}
+/* 3. ESTILOS DEL TÍTULO (.Titulo_Centrado) */
+.Titulo_Centrado_Pensamientos {
+    /* Tamaño gigante y centrado */
+    font-size: 8vw;
+    text-align: center;
+    
+    /* Eliminar margen superior del navegador */
+    margin-top: 0; 
+    /* 🛑 CRÍTICO: Este margen empuja el siguiente elemento (el div de los <p>) */
+    margin-bottom: 30px; /* Aumentamos el espacio a 200px para que los <p> sean visibles */
+    
+    /* Padding y color */
+    padding-top: 50px; /* Espacio entre el borde superior y el texto H1 */
+    color: white;
+}
+
+.parrafos-centrados {
+    /* 1. Limita el ancho para que el texto no sea una línea infinita */
+    max-width: 700px; 
+    
+    /* 2. Centra el BLOQUE de 700px horizontalmente usando márgenes automáticos */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 3. Centra el TEXTO dentro de este bloque de 700px */
+    text-align: center;
+}
+
+/* 2. El CONTENEDOR GRID (La clave para la auto-apilación) */
+.contenedor-cajas {
+    /* 🛑 Paso 1: Activar Grid */
+    display: grid;
+    
+    /* 🛑 Paso 2: Definir las columnas (Dos columnas de igual ancho) */
+    grid-template-columns: 1fr 1fr; /* '1fr' significa 1 fracción del espacio disponible */
+    
+    /* 🛑 Paso 3: Espacio entre las cajas */
+    gap: 30px; 
+    
+    /* Opcional: Limitar el ancho del contenedor y centrarlo */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 3. Estilos de las CAJAS (para que se vean bien) */
+.caja-texto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff; /* Borde de color distintivo */
+}
+
+/* 4. Estilos de los títulos editables */
+.caja-titulo {
+    color: #007bff;
+    margin-top: 0; /* Elimina el margen superior por defecto */
+    margin-bottom: 15px; /* Espacio entre el título y el párrafo */
+    border-bottom: 1px dashed #ccc; /* Línea de separación sutil */
+    padding-bottom: 5px;
+    font-size: 1.5em;
+}
+
+/* 5. Estilos del párrafo */
+.caja-texto p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* CSS */
+.fila-de-botones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.boton {
+    width: 120px;        /* 🔥 tamaño fijo (AJUSTABLE) */
+    height: 32px;        /* 🔥 altura más pequeña */
+    
+    background-color: #0a6bff;
+    color: white;
+
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;     /* 🔥 fuente más pequeña */
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background-color: #065dd8;
+    transform: translateY(-2px);
+}
+
+
+
+
+.botones-navegacion:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .botones-navegacion {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+.fila-de-botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px 0;
+}
+
+.CreditosYUpdate {
+    text-align: center;        /* Centra todo */
+    font-size: 12px;           /* Mucho más pequeño */
+    color: #ffffffb5;          /* Blanco suave/transparente */
+    margin-top: 40px;          /* Espacio arriba */
+    margin-bottom: 20px;       /* Espacio abajo */
+}
+
+.CreditosYUpdate p {
+    margin: 3px 0;             /* Para que no se separen demasiado */
 }
