@@ -1,1 +1,1 @@
-Este es un proyecto totalmente personal , meramente co nfines de entretenimiento y practica de los compoenentes básicos de la programación web!
+Este es un proyecto totalmente personal , meramente con fines de entretenimiento y practica de los componentes básicos de la programación web!
